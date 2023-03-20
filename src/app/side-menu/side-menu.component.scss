@@ -1,0 +1,127 @@
+// Colors
+
+$baseColor: #4589ff;
+$hoverColor: #d2e3ff;
+$menuColor: #42526e;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 250px;
+  height: calc(100vh - 75px);
+  max-height: 100%;
+  background-color: white;
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  margin: 0;
+
+  .top-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      height: 46px;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 8px;
+      border: none;
+      background-color: white;
+      transition: all 225ms ease-in-out;
+
+      img {
+        height: 24px;
+        width: 24px;
+        margin-left: 24px;
+      }
+      span {
+        text-align: right;
+        margin-right: 24px;
+        color: $menuColor;
+        font-weight: 600;
+      }
+      &:hover {
+        // background-color: $hoverColor;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+        transition: all 75ms ease-in-out;
+        cursor: pointer;
+    }
+    &:active {
+        box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+        transition: all 225ms ease-in-out;
+    }
+    }
+    .smaller-icon {
+        img {
+            height: 18px !important;
+            width: 18px !important;
+        }
+    }
+    .page-active {
+        background-color: $hoverColor;
+    }
+  }
+  .bottom-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      height: 46px;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 8px;
+      border: none;
+      background-color: white;
+      transition: all 225ms ease-in-out;
+
+      img {
+        height: 24px;
+        width: 24px;
+        margin-left: 24px;
+      }
+      span {
+        text-align: right;
+        margin-right: 24px;
+        color: $menuColor;
+        font-weight: 600;
+      }
+      &:hover {
+        // background-color: $hoverColor;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+        transition: all 75ms ease-in-out;
+        cursor: pointer;
+      }
+      &:active {
+        box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+        transition: all 225ms ease-in-out;
+      }
+    }
+    .smaller-icon {
+      img {
+        height: 18px !important;
+        width: 18px !important;
+      }
+    }
+    .page-active {
+        background-color: $hoverColor;
+    }
+  }
+}
+

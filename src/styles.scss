@@ -1,10 +1,17 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('/src/assets/fonts/OpenSans/OpenSans-Regular.ttf');
+    src: url('../src/assets/fonts/OpenSans/OpenSans-Regular.ttf');
   }
 
 
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+.mt-48 {
+  margin-top: 48px!important;
+}
+.mb-48 {
+  margin-bottom: 48px!important;
 }
