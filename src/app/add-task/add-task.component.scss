@@ -1,0 +1,244 @@
+*:focus {
+  outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../../assets/icons/calendar_icon_selector.png") no-repeat;
+  background-size: 16px;
+  background-position-y: 50%;
+  background-position-x: 4px;
+  width: 30px;
+  height: 30px;
+  border-width: thin;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    background-position-y: 60%;
+    transition: all 75ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+main {
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
+}
+
+.title-input {
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 6px;
+  width: 100%;
+  text-indent: 20px;
+}
+
+.assign-menu {
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 6px;
+  width: 100%;
+  text-indent: 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../../assets/icons/arrow_down.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 16px;
+  background-size: 10px;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    background-position-y: 18px;
+    transition: all 75ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.date-selector {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  span {
+    margin: 6px;
+    font-weight: bold;
+  }
+  input {
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 6px;
+    width: 100%;
+    text-indent: 20px;
+
+    transition: all 100ms ease-in-out;
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.category-selector {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  span {
+    margin: 6px;
+    font-weight: bold;
+  }
+  select {
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 6px;
+    width: 100%;
+    text-indent: 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("../../assets/icons/arrow_down.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 16px;
+    background-size: 10px;
+    transition: all 100ms ease-in-out;
+    &:hover {
+      background-position-y: 18px;
+      transition: all 75ms ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.urgency-selector {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 14px 10px;
+    margin: 12px 4px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+  }
+  img {
+    margin-left: 12px;
+    width: 16px;
+  }
+  .h-red:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #ff3d00,
+      5px 5px 15px 5px rgba(255, 61, 0, 0);
+    box-shadow: 0px 10px 13px -7px #ff3d00, 5px 5px 15px 5px rgba(255, 61, 0, 0);
+    transition: all 75ms ease-in-out;
+  }
+  .h-orange:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #ffa800,
+      5px 5px 15px 5px rgba(255, 61, 0, 0);
+    box-shadow: 0px 10px 13px -7px #ffa800, 5px 5px 15px 5px rgba(255, 61, 0, 0);
+    transition: all 75ms ease-in-out;
+  }
+  .h-green:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #7ae229,
+      5px 5px 15px 5px rgba(255, 61, 0, 0);
+    box-shadow: 0px 10px 13px -7px #7ae229, 5px 5px 15px 5px rgba(255, 61, 0, 0);
+    transition: all 75ms ease-in-out;
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  span {
+    margin: 6px;
+    font-weight: bold;
+  }
+  textarea {
+    width: 100%;
+    height: 80px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-top: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    resize: none;
+  }
+}
+
+.subtasks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  strong {
+    margin: 6px;
+    font-weight: bold;
+  }
+  .subtask-selector-input {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    input {
+      height: 40px;
+      font-size: 15px;
+      border: none;
+      margin: 6px;
+      width: 100%;
+      text-indent: 20px;
+    }
+    button {
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      img {
+        height: 16px;
+        transition: all 100ms ease-in-out;
+        &:hover {
+          filter: brightness(0);
+          transition: all 75ms ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .subtask-list {
+    input {
+      height: 15px;
+      width: 15px;
+      background-color: #eee;
+      transition: all 255ms ease-in-out;
+    }
+  }
+}

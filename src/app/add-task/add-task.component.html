@@ -1,1 +1,57 @@
-<p>add-task works!</p>
+<main>
+  <section class="left-side">
+    <input class="title-input" placeholder="Enter a title" />
+
+    <select class="assign-menu">
+      <option>Select contacts to assign</option>
+      <option>Selection 1</option>
+      <option>Selection 2</option>
+    </select>
+
+    <div class="date-selector">
+      <span>Due date</span>
+      <input type="date" placeholder="MM/DD/YYYY" />
+    </div>
+
+    <div class="category-selector">
+      <span>Category</span>
+      <select>
+        <option>Select task category</option>
+      </select>
+    </div>
+
+    <div class="urgency-selector">
+      <button class="h-red">
+        <span>Urgent</span>
+        <img src="../../assets/icons/urgency_urgent.png" />
+      </button>
+      <button class="h-orange">
+        <span>Medium</span>
+        <img src="../../assets/icons/urgency_medium.png" />
+      </button>
+      <button class="h-green">
+        <span>Low</span>
+        <img src="../../assets/icons/urgency_low.png" />
+      </button>
+    </div>
+
+    <div class="description">
+      <span>Description</span>
+      <textarea placeholder="Enter a Description"></textarea>
+    </div>
+
+    <div class="subtasks">
+      <strong>Subtasks</strong>
+      <div class="subtask-selector-input">
+        <input placeholder="Add new subtask"/>
+        <button><img src="../../assets/icons/plus.png"></button>
+      </div>
+      <div class="subtask-list">
+        <ul>
+          <input type="checkbox" />
+          <span>Text</span>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

@@ -7,6 +7,6 @@ $baseColor: #4589FF;
 }
 
 .router-container {
-    display: flex;
-    margin: 48px 24px 48px 24px;
+    margin: 64px;
+    width: calc(100% - 250px);
 }
