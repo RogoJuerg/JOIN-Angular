@@ -155,18 +155,21 @@ main {
       5px 5px 15px 5px rgba(255, 61, 0, 0);
     box-shadow: 0px 10px 13px -7px #ff3d00, 5px 5px 15px 5px rgba(255, 61, 0, 0);
     transition: all 75ms ease-in-out;
+    transform: translateY(-1px);
   }
   .h-orange:hover {
     -webkit-box-shadow: 0px 10px 13px -7px #ffa800,
       5px 5px 15px 5px rgba(255, 61, 0, 0);
     box-shadow: 0px 10px 13px -7px #ffa800, 5px 5px 15px 5px rgba(255, 61, 0, 0);
     transition: all 75ms ease-in-out;
+    transform: translateY(-1px);
   }
   .h-green:hover {
     -webkit-box-shadow: 0px 10px 13px -7px #7ae229,
       5px 5px 15px 5px rgba(255, 61, 0, 0);
     box-shadow: 0px 10px 13px -7px #7ae229, 5px 5px 15px 5px rgba(255, 61, 0, 0);
     transition: all 75ms ease-in-out;
+    transform: translateY(-1px);
   }
 }
 
@@ -240,5 +243,44 @@ main {
       background-color: #eee;
       transition: all 255ms ease-in-out;
     }
+  }
+}
+
+.options-butons-container {
+  position: absolute;
+  bottom: 24px;
+  right: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      -webkit-box-shadow: 0px 8px 15px -1px rgba(0, 0, 0, 0.48);
+      box-shadow: 0px 8px 15px -1px rgba(0, 0, 0, 0.48);
+      transform: translateY(-1px);
+      transition: all 75ms ease-in-out;
+    }
+  }
+
+  .button-1 {
+    background-color: white;
+    &:hover {
+      border-color: #4589ff;
+      color: #4589ff;
+      transition: all 75ms ease-in-out;
+    }
+  }
+
+  .button-2 {
+    background-color: #4589ff;
+    color: white;
   }
 }
